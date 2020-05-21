@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google fonts -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-   <title>Project</title>
-   <style>
-     header {
-       background: url('https://images.pexels.com/photos/1097456/pexels-photo-1097456.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-       width: '100%';
-       background-position: center;
-       background-size: cover;
-       min-height: 800px;
-     }
-     li {
-       padding: 10px;
-     }
-     @media screen and (max-width: 600px){
-       header {
-         min-height: 500px;
-       }
-     }
-   </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Project</title>
+    <style>
+      header {
+        background: url("https://images.pexels.com/photos/3774039/pexels-photo-3774039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        width: "100%";
+        background-position: center;
+        background-size: cover;
+        min-height: 800px;
+      }
+      .section {
+        padding: 4vw 0;
+      }
+      @media screen and (max-width: 600px) {
+        header {
+          min-height: 500px;
+        }
+      }
+    </style>
   </head>
   <body>
     <!-- navbar -->
@@ -52,12 +58,72 @@
       </ul>
     </header>
 
+    <!-- section -->
+    <section class="section container" id="photos">
+      <div class="row">
+        <div class="col s12 l4">
+          <img
+            src="https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h4 class="indigo-text darken-4">Skies</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+            cupiditate consectetur quidem id, molestiae expedita dolore cum
+            sapiente dolores suscipit aut placeat beatae possimus nemo tenetur,
+            voluptates iure facilis vero.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4 push-l7 offset-l1">
+          <img
+            src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 pull-l5 right-align">
+          <h4 class="green-text darken-4">Trees</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+            cupiditate consectetur quidem id, molestiae expedita dolore cum
+            sapiente dolores suscipit aut placeat beatae possimus nemo tenetur,
+            voluptates iure facilis vero.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l4">
+          <img
+            src="https://images.pexels.com/photos/462118/pexels-photo-462118.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt=""
+            class="responsive-img materialboxed"
+          />
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h4 class="orange-text darken-4">Nature</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+            cupiditate consectetur quidem id, molestiae expedita dolore cum
+            sapiente dolores suscipit aut placeat beatae possimus nemo tenetur,
+            voluptates iure facilis vero.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-      $(document).ready(() => $('.sidenav').sidenav())
+      $(document).ready(() => {
+        $(".sidenav").sidenav()
+        $('.materialboxed').materialbox()
+      });
     </script>
-</body>
+  </body>
 </html>
