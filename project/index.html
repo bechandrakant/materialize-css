@@ -186,22 +186,65 @@
       <div class="row">
         <div class="col s12 l5">
           <h3 class="indigo-text text-darken-4">Get In Touch</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure rem, vel blanditiis provident ipsum modi totam itaque aut, voluptate nobis ratione enim tenetur dolorum harum tempore iusto incidunt cumque!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure rem, vel blanditiis provident ipsum modi totam itaque aut, voluptate nobis ratione enim tenetur dolorum harum tempore iusto incidunt cumque!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure rem, vel blanditiis provident ipsum modi totam itaque aut, voluptate nobis ratione enim tenetur dolorum harum tempore iusto incidunt cumque!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati iure rem, vel blanditiis provident ipsum modi totam itaque aut, voluptate nobis ratione enim tenetur dolorum harum tempore iusto incidunt cumque!</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+            iure rem, vel blanditiis provident ipsum modi totam itaque aut,
+            voluptate nobis ratione enim tenetur dolorum harum tempore iusto
+            incidunt cumque!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+            iure rem, vel blanditiis provident ipsum modi totam itaque aut,
+            voluptate nobis ratione enim tenetur dolorum harum tempore iusto
+            incidunt cumque!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+            iure rem, vel blanditiis provident ipsum modi totam itaque aut,
+            voluptate nobis ratione enim tenetur dolorum harum tempore iusto
+            incidunt cumque!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+            iure rem, vel blanditiis provident ipsum modi totam itaque aut,
+            voluptate nobis ratione enim tenetur dolorum harum tempore iusto
+            incidunt cumque!
+          </p>
         </div>
         <div class="col s12 l5 offset-l2">
           <form action="">
             <div class="input-field">
               <i class="material-icons prefix">email</i>
-              <input type="email" id="email">
+              <input type="email" id="email" />
               <label for="email">Your email address</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix">message</i>
               <textarea id="message" class="materialize-textarea"></textarea>
               <label for="message">Your message here...</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">date_range</i>
+              <input type="text" class="datepicker" id="date" />
+              <label for="date">Please choose appointment date...</label>
+            </div>
+            <div class="input-field">
+              <p>Services</p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Photography</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" />
+                  <span>Editing</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+              <div class="btn">Submit</div>
             </div>
           </form>
         </div>
@@ -217,6 +260,7 @@
         $(".materialboxed").materialbox();
         $(".parallax").parallax();
         $(".tabs").tabs();
+        $(".datepicker").datepicker();
       });
     </script>
   </body>
